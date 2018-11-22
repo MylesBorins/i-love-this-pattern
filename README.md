@@ -63,4 +63,4 @@ latestCurrentNode().catch(e => console.log(e));
 
 [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
-See index.js 😉
+See [index.js](./index.js) 😉
