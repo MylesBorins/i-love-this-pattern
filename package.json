@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -12,6 +13,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
     "prettier": "^1.15.2"
   }
 }

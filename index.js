@@ -16,7 +16,7 @@ limitations under the License.
 
 // I <3 destrucuturing
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-const { readFile } = require('fs').promises
+const { readFile } = require('fs').promises;
 const { resolve } = require('path');
 
 const licensePath = resolve('./LICENSE');
@@ -31,11 +31,11 @@ async function getFiles(...files) {
   return await Promise.all(files);
 }
 
-async function main () {
+async function main() {
   // it all comes together here!
   const [license, readme] = await getFiles(licensePath, readmePath);
   console.log(`Our license is ${license.length} characters long`);
-  console.log(`Our readme ${readme.length !== 0 ? 'is not' : 'is' } empty`);
+  console.log(`Our readme ${readme.length !== 0 ? 'is not' : 'is'} empty`);
 }
 
 main().catch(e => console.log(e));
