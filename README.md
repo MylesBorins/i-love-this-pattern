@@ -21,7 +21,7 @@ const { resolve } = require('path');
 
 [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
-```
+```js
 function sum(...numbers) {
   return numbers.reduce((total, num) => {
     return total + num;
@@ -48,7 +48,7 @@ Did you notice that `numbers` has the `Array.prototype` methods 🎉
 
 [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
-```
+```js
 async function latestCurrentNode () {
   const response = await fetch('https://nodejs.org/download/release/index.tab');
   const tab = await response.text();
