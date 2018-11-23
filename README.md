@@ -23,9 +23,7 @@ const { resolve } = require('path');
 
 ```js
 function sum(...numbers) {
-  return numbers.reduce((total, num) => {
-    return total + num;
-  }, 0);
+  return numbers.reduce((total, num) => total + num, 0);
 }
 
 sum(1);
