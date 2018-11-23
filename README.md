@@ -54,7 +54,7 @@ async function latestCurrentNode () {
   console.log(`The latest release of node is ${version}.\nIt was released on ${date}.`);
 }
 
-latestCurrentNode().catch(e => console.log(e));
+latestCurrentNode().catch(console.log);
 ```
 
 ## Await Promise.all
