@@ -28,14 +28,21 @@ async function getFiles(...files) {
   files = files.map(file => {
     return readFile(file, 'utf-8');
   });
-  return await Promise.all(files);
+  files = await Promise.all(files);
+  return files;
 }
 
 async function main() {
   // it all comes together here!
-  const [license, readme] = await getFiles(licensePath, readmePath);
-  console.log(`Our license is ${license.length} characters long`);
-  console.log(`Our readme ${readme.length !== 0 ? 'is not' : 'is'} empty`);
+  let license, readme;
+  try {
+    [license, readme] = await getFiles(licensePath, readmePath);
+    console.log(`Our license is ${license.length} characters long`);
+    console.log(`Our readme ${readme.length !== 0 ? 'is not' : 'is'} empty`);
+  }
+  catch (e) {
+    console.error(e);
+  }
 }
 
-main().catch(e => console.log(e));
+main();
