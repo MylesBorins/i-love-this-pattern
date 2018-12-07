@@ -24,12 +24,11 @@ const readmePath = resolve('./README.md');
 
 // squee rest paramaters
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
-async function getFiles(...files) {
+function getFiles(...files) {
   files = files.map(file => {
     return readFile(file, 'utf-8');
   });
-  files = await Promise.all(files);
-  return files;
+  return Promise.all(files);
 }
 
 async function main() {
