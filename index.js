@@ -38,8 +38,7 @@ async function main() {
     [license, readme] = await getFiles(licensePath, readmePath);
     console.log(`Our license is ${license.length} characters long`);
     console.log(`Our readme ${readme.length !== 0 ? 'is not' : 'is'} empty`);
-  }
-  catch (e) {
+  } catch (e) {
     console.error(e);
   }
 }
