@@ -8,7 +8,7 @@
 * Async Functions and Await
 * Await Promise.all!!!
 
-## Destrucuturing
+## Destructuring
 
 [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
