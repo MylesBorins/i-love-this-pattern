@@ -11,7 +11,7 @@
   "author": "Myles Borins <myles.borins@gmail.com",
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^9.39.1",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "prettier": "^1.15.2"
